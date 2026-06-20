@@ -1,3 +1,8 @@
 export default function Assistant() {
-  return <h1>AI Assistant Page</h1>;
+  return (
+    <div>
+      <h1>AI Assistant</h1>
+      <p>Ask company-related questions.</p>
+    </div>
+  );
 }

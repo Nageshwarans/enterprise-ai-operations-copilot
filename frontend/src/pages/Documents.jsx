@@ -1,3 +1,8 @@
 export default function Documents() {
-  return <h1>Documents Page</h1>;
+  return (
+    <div>
+      <h1>Document Management</h1>
+      <p>Upload and manage company documents.</p>
+    </div>
+  );
 }
