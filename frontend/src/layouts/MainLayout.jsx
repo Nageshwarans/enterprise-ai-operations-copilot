@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function MainLayout({ children }) {
   return (
     <div
       style={{
         display: "flex",
-        minHeight: "100vh"
+        minHeight: "100vh",
       }}
     >
       <div
@@ -11,25 +13,42 @@ export default function MainLayout({ children }) {
           width: "250px",
           background: "#111827",
           color: "white",
-          padding: "20px"
+          padding: "20px",
         }}
       >
         <h2>Enterprise AI</h2>
 
         <hr />
 
-        <p>📊 Dashboard</p>
-        <p>📁 Documents</p>
-        <p>🤖 Assistant</p>
-        <p>🚨 Incidents</p>
-        <p>📅 Meetings</p>
-        <p>📈 Reports</p>
+        <p>
+          <Link to="/">Dashboard</Link>
+        </p>
+
+        <p>
+          <Link to="/documents">Documents</Link>
+        </p>
+
+        <p>
+          <Link to="/assistant">Assistant</Link>
+        </p>
+
+        <p>
+          <Link to="/incidents">Incidents</Link>
+        </p>
+
+        <p>
+          <Link to="/meetings">Meetings</Link>
+        </p>
+
+        <p>
+          <Link to="/reports">Reports</Link>
+        </p>
       </div>
 
       <div
         style={{
           flex: 1,
-          padding: "20px"
+          padding: "20px",
         }}
       >
         {children}
